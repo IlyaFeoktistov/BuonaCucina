@@ -1,14 +1,14 @@
 ﻿<header class="header">
 	<div class="header__top-level">
-		<div class="container flex-content align-center justify-beetwen">
+		<div class="header-wrapper container flex-content align-center justify-beetwen">
 			<a class="header__brand" asp-controller="Recipes" asp-action="Index">BuinaCucina</a>
 			<div class="header__auth">
-				<ul class="nav nav-dark nav-h">
+				<ul class="nav header-nav-auth">
 					<li class="nav-item">
-						<a class="auth-link dark-link" href="#">Войти</a>
+						<a class="nav-link" href="#">Войти</a>
 					</li>
 					<li class="nav-item">
-						<a class="auth-link dark-link" href="#">Регистрация</a>
+						<a class="nav-link" href="#">Регистрация</a>
 					</li>
 				</ul>
 			</div>
@@ -17,22 +17,22 @@
 	<div class="container">
 		<div class="header__bottom-level gray-box flex-content align-center justify-beetwen">
 			<nav class="header__nav">
-				<ul class="nav nav-dark nav-h">
+				<ul class="nav nav-dark header-nav">
 					<li class="nav-item">
-						<a class="nav-link" asp-controller="Recipes" asp-action="Index">Рецепты</a>
+						<a class="nav-link" nav-link-active asp-controller="Recipes" asp-action="Index">Рецепты</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" asp-controller="Articles" asp-action="Index">Статьи</a>
+						<a class="nav-link" nav-link-active asp-controller="Articles" asp-action="Index">Статьи</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" asp-controller="Forum" asp-action="Index">Форум</a>
+						<a class="nav-link" nav-link-active asp-controller="Forum" asp-action="Index">Форум</a>
 					</li>
 				</ul>
 			</nav>
-			<a class="header__action-page">Добавить рецепт</a>
+			<a href="#" class="btn btn-green btn-underline action-page">Добавить рецепт</a>
 		</div>
 		<div class="header__breadcrumb">
-			<p>/Рецепты/Супы</p>
+			<p class="text-gray" style="padding-left: 20px;">/Рецепты/Супы</p>
 		</div>
 	</div>
 </header>
