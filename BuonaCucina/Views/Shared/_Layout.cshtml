@@ -9,9 +9,7 @@
     @{
         await Html.RenderPartialAsync("HeaderPartial");
     }
-    <main class="main">
-        @RenderBody()
-    </main>
+    @RenderBody()
     @{
         await Html.RenderPartialAsync("FooterPartial");
     }

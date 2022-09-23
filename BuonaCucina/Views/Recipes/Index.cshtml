@@ -1,4 +1,68 @@
-﻿<h1>Index</h1>
+﻿<main class="main flex-content">
+	<aside class="main__adide-menu">
+		<ul class="nav nav-dark nav-v">
+			<li class="nav-item">
+				<a class="nav-link">Салаты и закуски</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Супы</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Вторые блюда. Мясо.</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Вторые блюда. Птица.</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Вторые блюда. Рыба и морепродукты.</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Вторые блюда. Вегетарианские</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Гарниры и соусы.</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Хлеб и выпечка.</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Десерты.</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Напитки. Без алкоголя.</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Напитки. Алкоголь.</a>
+			</li>
+		</ul>
+	</aside>
+	<div class="main__content">
+		@for(int i = 0; i < 10; i++) {
+			<article class="recipe-card gray-box flex-content">
+				<div class="recipe-img">
+				</div>
+				<div class="recipe-content">
+					<div class="recipe__header">
+						<h2 class="recipe-header">Очень вкусный суп</h2>
+						<a class="recipe-link green-link">Читать далее -></a>
+					</div>
+					<div class="recipe-desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="recipe-bottom">
+						<span>40 мин</span>
+						<div class="recipe-author">
+							<a class="recipe-author">@@Username</a>
+							<span class="recipe-date">23.09.22</span>
+						</div>
+					</div>
+				</div>
+			</article>
+		}
+	</div>
+</main>
+
+
 
 @{
 	ViewBag.Title = "Рецепты";
