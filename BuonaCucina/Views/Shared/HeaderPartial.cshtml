@@ -1,0 +1,38 @@
+﻿<header class="header">
+	<div class="header__top-level">
+		<div class="container">
+			<a class="header__brand" asp-controller="Home" asp-action="Index">BuinaCucina</a>
+			<div class="header__auth">
+				<ul class="nav nav-dark nav-h">
+					<li class="nav-item">
+						<a class="auth-link dark-link" href="#">Войти</a>
+					</li>
+					<li class="nav-item">
+						<a class="auth-link dark-link" href="#">Регистрация</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="header__bottom-level gray-box">
+			<nav class="header__nav">
+				<ul class="nav nav-dark nav-h">
+					<li class="nav-item">
+						<a class="nav-link" asp-controller="Home" asp-action="Index">Рецепты</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" asp-controller="Home" asp-action="Articles">Статьи</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" asp-controller="Home" asp-action="Forum">Форум</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="header__action-page">Добавить рецепт</a>
+		</div>
+		<div class="header__breadcrumb">
+			<p>/Рецепты/Супы</p>
+		</div>
+	</div>
+</header>
